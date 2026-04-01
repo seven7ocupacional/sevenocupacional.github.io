@@ -411,14 +411,13 @@ function reopenModal() {
 }
 </script>
 <body>
-<!-- MODAL DO VÍDEO DE APRESENTAÇÃO -->
-<div class="video-modal show" id="videoModal">
+<!-- VÍDEO MODAL -->
+<div id="videoModal" class="video-modal show">
     <div class="video-modal-content">
-        <button class="close-modal" id="closeModal">&times;</button>
+        <button class="close-modal" id="closeBtn">&times;</button>
         <div class="video-wrapper">
-            <<video id="introVideo" controls>>
+            <video id="videoPlayer" controls style="width:100%;height:100%;object-fit:cover;">
                 <source src="assets_videos_apresentacao-seven.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
             </video>
         </div>
     </div>
